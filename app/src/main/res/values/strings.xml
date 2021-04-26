@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CNIT325FinalProject</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
 </resources>
