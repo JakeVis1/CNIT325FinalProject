@@ -20,10 +20,6 @@ public class NavigationActivity extends AppCompatActivity {
 
     }
 
-    public void ToWeather(View v)
-    {
-        Intent intent = new Intent(this, TestWeather.class);
-        startActivity(intent);
-    }
+
 
 }
