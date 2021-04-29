@@ -3,6 +3,7 @@ package com.example.cnit325finalproject;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.example.testmap.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 

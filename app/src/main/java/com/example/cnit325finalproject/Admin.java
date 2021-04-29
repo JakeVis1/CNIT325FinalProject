@@ -12,6 +12,8 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.example.testmap.R;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;

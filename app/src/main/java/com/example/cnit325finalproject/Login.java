@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 
+import com.example.testmap.R;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
