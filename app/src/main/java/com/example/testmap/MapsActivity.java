@@ -160,8 +160,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                             String finalMinTemp = Float.toString(roundMinTemp);
                             // Set text views with new data
                             cityText.setText(location.getText().toString());
-                            minTempText.setText("Low: "+finalMinTemp);
-                            tempHigh.setText("High: "+finalMaxTemp);
+                            minTempText.setText(getText(R.string.low) + ": "+finalMinTemp);
+                            tempHigh.setText(getText(R.string.high) + ": " + finalMaxTemp);
                             weather_state.setText(weatherState);
                             mapFragment.getMapAsync(MapsActivity.this::onMapReady);
                         } catch (JSONException e) {

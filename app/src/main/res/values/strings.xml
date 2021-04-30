@@ -19,4 +19,5 @@
     <string name="set_city">Set City</string>
     <string name="get_weather">Get Weather</string>
     <string name="temperature">Temp</string>
+    <string name="low">Low</string>
 </resources>

@@ -14,7 +14,7 @@ public class TimeHelper extends AsyncTask<Void, Void, String> {
         String time = "";
         try
         {
-            Socket s = new Socket("10.192.13.108",8189);
+            Socket s = new Socket("128.211.201.55",8189);
             try
             {
                 InputStream inStream = s.getInputStream();

@@ -20,4 +20,5 @@
     <string name="delete">Effacer</string>
     <string name="city">" Ville"</string>
     <string name="add_user">Ajouter un utilisateur</string>
+    <string name="low">faible</string>
 </resources>

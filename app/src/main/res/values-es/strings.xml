@@ -20,4 +20,5 @@
     <string name="username_to_add">Nombre de usuario para agregar</string>
     <string name="weather_state">" Estado Del Tiempo"</string>
     <string name="welcome_administrator">Administrador de Bienvenida</string>
+    <string name="low">baja</string>
 </resources>
