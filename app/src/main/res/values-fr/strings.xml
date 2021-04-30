@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">testmap</string>
+    <string name="welcome_administrator">Administrateur De Bienvenue</string>
+    <string name="weather_state">" État Météorologique"</string>
+    <string name="username_to_add">Nom d\'utilisateur à ajouter</string>
+    <string name="unit2">Unité</string>
+    <string name="unit">Unité</string>
+    <string name="title_activity_maps">Carte</string>
+    <string name="temperature">Temp</string>
+    <string name="set_city">Définir la ville</string>
+    <string name="password_to_add">" Mot de passe à ajouter"</string>
+    <string name="logout">Se déconnecter</string>
+    <string name="login">Connexion</string>
+    <string name="is_admin">Est un administrateur</string>
+    <string name="i_am_an_administrator">Je suis administrateur</string>
+    <string name="high">Haute</string>
+    <string name="get_weather">" Obtenir la météo"</string>
+    <string name="enter_your_location_data">Entrez vos données de localisation</string>
+    <string name="delete">Effacer</string>
+    <string name="city">" Ville"</string>
+    <string name="add_user">Ajouter un utilisateur</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">testmap</string>
+    <string name="high">Alta</string>
+    <string name="add_user">Agregar Usuario</string>
+    <string name="city">Ciudad</string>
+    <string name="delete">Eliminar</string>
+    <string name="enter_your_location_data">Ingrese sus datos de ubicación</string>
+    <string name="get_weather">Obtener el clima</string>
+    <string name="i_am_an_administrator">Soy Administradora</string>
+    <string name="is_admin">Es Administrador</string>
+    <string name="login">Acceso</string>
+    <string name="logout">cerrar sesión</string>
+    <string name="password_to_add">Contraseña para agregar</string>
+    <string name="set_city">" Establecer Ciudad"</string>
+    <string name="temperature">Temperatura</string>
+    <string name="title_activity_maps">Mapa</string>
+    <string name="unit">Unidad</string>
+    <string name="unit2">Unidad</string>
+    <string name="username_to_add">Nombre de usuario para agregar</string>
+    <string name="weather_state">" Estado Del Tiempo"</string>
+    <string name="welcome_administrator">Administrador de Bienvenida</string>
+</resources>

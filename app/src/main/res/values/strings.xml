@@ -1,4 +1,22 @@
 <resources>
     <string name="app_name">testmap</string>
     <string name="title_activity_maps">Map</string>
+    <string name="add_user">Add User</string>
+    <string name="delete">Delete</string>
+    <string name="logout">Logout</string>
+    <string name="welcome_administrator">Welcome Administrator</string>
+    <string name="is_admin">Is Admin</string>
+    <string name="username_to_add">Username to Add</string>
+    <string name="password_to_add">Password to Add</string>
+    <string name="i_am_an_administrator">I Am An Administrator</string>
+    <string name="login">Login</string>
+    <string name="enter_your_location_data">Enter your location data.</string>
+    <string name="city">City</string>
+    <string name="high">High</string>
+    <string name="unit">Unit</string>
+    <string name="unit2">Unit</string>
+    <string name="weather_state">Weather State</string>
+    <string name="set_city">Set City</string>
+    <string name="get_weather">Get Weather</string>
+    <string name="temperature">Temp</string>
 </resources>
