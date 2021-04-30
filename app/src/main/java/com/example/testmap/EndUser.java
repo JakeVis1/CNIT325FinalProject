@@ -22,7 +22,7 @@ public class EndUser extends User implements Authenticateable {
             BufferedReader reader = new BufferedReader(new FileReader(file));
             String line = reader.readLine();
             while(line != null){
-                if(line.equals(login)){
+                if(line.contains(login)){
                     return true;
                 }
                 line = reader.readLine();

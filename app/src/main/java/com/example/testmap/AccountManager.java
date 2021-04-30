@@ -5,20 +5,41 @@ import java.io.FileReader;
 import java.io.PrintWriter;
 import java.io.IOException;
 import java.io.BufferedReader;
+import java.sql.Time;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.concurrent.ExecutionException;
+
 public class AccountManager {
     public boolean CreateAccount(String username, String password, boolean isAdmin, File file){
         try {
             //change folder path
 
             FileWriter writer = new FileWriter(file, true);
+            TimeHelper helper = new TimeHelper();
+            String time = "";
+            try
+            {
+                time = new TimeHelper().execute().get();
+            } catch (ExecutionException e)
+            {
+                time = "TimeServerFault";
+                e.printStackTrace();
+            } catch (InterruptedException e)
+            {
+                time = "TimeServerFault";
+                e.printStackTrace();
+            }
+
+            System.out.println(time);
             if(isAdmin)
             {
-                writer.write(username + "," + password +  "," + "Administrator" +"\n");
+
+                writer.write(username + "," + password +  "," + "Administrator" +
+                        "," + time + "\n");
             } else
             {
-                writer.write(username + "," + password +  "," + "User" +"\n");
+                writer.write(username + "," + password +  "," + "User" + "," + time +"\n");
             }
 
             writer.close();
@@ -121,17 +142,16 @@ public class AccountManager {
         String password = account.split(",")[1];
         String admin = account.split(",")[2];
 
-        boolean isAdmin;
+
         if(admin.equals("Administrator"))
         {
-            isAdmin = true;
+
+            return new Administrator(tempUsername, password);
         } else
         {
-            isAdmin = false;
-        }
 
-        User retUser = new User(tempUsername, password, isAdmin);
-        return retUser;
+            return new EndUser(tempUsername, password);
+        }
     }
 
 }
