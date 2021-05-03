@@ -12,15 +12,20 @@ import android.widget.Toast;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-
+/**
+ * This class is the code behind for the login screen
+ * @author Jake Visniski
+ */
 public class Login extends AppCompatActivity {
 
+    //Boilerplate method for instantiating GUI layout
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
     }
 
+    //This method is the OnClick for the login button
     public void LoginUser(View v)
     {
         Login.this.getFilesDir();
@@ -56,14 +61,14 @@ public class Login extends AppCompatActivity {
 
         if(((User) user).getAdmin())
         {
-            if(((Administrator) user).CheckLogin(file))
+            if(user.CheckLogin(file))
             {
                 Intent intent = new Intent(this, Admin.class);
                 startActivity(intent);
             }
         } else
         {
-            if(((EndUser) user).CheckLogin(file))
+            if(user.CheckLogin(file))
             {
                 Intent intent = new Intent(this, MapsActivity.class);
                 startActivity(intent);

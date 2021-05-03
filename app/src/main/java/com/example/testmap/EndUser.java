@@ -4,7 +4,11 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-
+/**
+ * This class is used for users of the weather/directions side of teh application
+ * Implements authenticateable and extends the User class.
+ * @author Jake Visniski
+ */
 public class EndUser extends User implements Authenticateable {
 
 

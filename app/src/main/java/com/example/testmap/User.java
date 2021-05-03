@@ -1,5 +1,9 @@
 package com.example.testmap;
-
+/**
+ * This class is hte superclass of EndUser and Administrator.
+ * The class is used primarily for code reuse purposes.
+ * @author Jake Visniski
+ */
 public class User {
     private String Username;
     private String Password;

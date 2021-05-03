@@ -7,6 +7,12 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
+/**
+ * This is the Administrator Object class that inherits from the User Superclass
+ * This class is primarily utilized for the constructor setting isAdmin to true.
+ * This class would also allow for future expansion of admin capabilities.
+ * @author Jake Visniski
+ */
 public class Administrator extends User implements Authenticateable {
 
 

@@ -15,8 +15,14 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-public class Admin extends AppCompatActivity {
 
+/**
+ * This is the Code-Behind for the Admin GUI Screen
+ * @author Jake Visniski
+ */
+public class Admin extends AppCompatActivity {
+    //This is the default overridden method which reads in all accounts to the dropdowm so they
+    //can be selected and deleted
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +45,7 @@ public class Admin extends AppCompatActivity {
     }
 
 
-
+    //This is the OnClick method for the Create User button
     public void createUser(View v)
     {
         Admin.this.getFilesDir();
@@ -87,7 +93,7 @@ public class Admin extends AppCompatActivity {
 
         }
     }
-
+    //This is the OnClick method for the delete user button
     public void deleteUser(View v)
     {
         AccountManager accountManager = new AccountManager();
@@ -95,11 +101,14 @@ public class Admin extends AppCompatActivity {
 
         Admin.this.getFilesDir();
         File file = new File(Admin.this.getFilesDir(), "Accounts.txt");
+
         User userToDelete =
                 accountManager.RetreiveAccount(username.getSelectedItem().toString(), file);
+
         if(accountManager.DeleteAccount(userToDelete.getUsername(),
                 userToDelete.getPassword(), userToDelete.getAdmin(), file))
         {
+
             Context context = getApplicationContext();
             CharSequence text = "Account Deletion Successful";
             int duration = Toast.LENGTH_SHORT;
@@ -109,7 +118,7 @@ public class Admin extends AppCompatActivity {
         }
 
     }
-
+    //This is the OnClickMethod for the Logout method
     public void logout(View v)
     {
         Intent intent = new Intent(this, Login.class);
