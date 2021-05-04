@@ -13,7 +13,7 @@ import java.util.concurrent.ExecutionException;
 /**
  * This class Is used to Create, Read, and Delete accounts
  * It is primarily used in the Admin Class
- * @author Jake Visniski
+ * @author Sydney Kim, Jake Visniski
  */
 public class AccountManager {
     public boolean CreateAccount(String username, String password, boolean isAdmin, File file){
